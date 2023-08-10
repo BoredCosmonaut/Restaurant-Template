@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,400;1,700&family=Edu+SA+Beginner:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body id="menu-page">
+    <nav id="header">
+        <div id="nav">
+            <p id="home" class="header-item">Home</p>
+            <p id="menu" class="header-item">Menu</p>
+            <div id="logo">
+                <img src="Images/Home/logo.svg" alt="" id="logo-Image">
+            </div>
+            <p id="res" class="header-item">Reservation</p>
+            <p id="about" class="header-item">About</p>
+        </div>
+    </nav>
+
+    <section id="items">
+        <div   class="item-container">
+            <div class="item-category-info">
+                <h2  class="item-category-title">Soups</h2>
+                <p class="item-category-title-text">Hot and tasty soups</p>
+                <!-- <hr id="line"> -->
+            </div>
+            <div id="item-go-here" class="category-items">
+        
+                <div  class="category-item">
+                    <div  class="item-text">
+                        <h3  class="item-name">Mushroom Soup</h3>
+                        <p  class="item-price">$29.90</p>
+                        <p  class="item-description">Made with organic mushrooms</p>
+                    </div>
+                    <div id="soup-image-container" class="item-image-container"> 
+                        <img src="Images/Menu/Soups/soup-1.jpg" alt="" id="soup-image" class="item-image">
+                    </div>
+                </div>
+
+                <div  class="category-item">
+                   <div  class="item-text">
+                        <h3  class="item-name">Lobster Bisque</h3>
+                        <p  class="item-price">$30</p>
+                        <p  class="item-description">Includes freshly caught lobster</p>
+                    </div>
+                    <div id="soup-image-container" class="item-image-container">
+                        <img src="Images/Menu/Soups/soup-2.jpg" alt="" id="soup-image" class="item-image">
+                    </div>
+                </div>
+
+                <div  class="category-item">
+                   <div  class="item-text">
+                        <h3  class="item-name">Clam Chowder</h3>
+                        <p  class="item-price">$30</p>
+                        <p  class="item-description">Made with freshly caught clams</p>
+                    </div>
+                    <div id="soup-image-container" class="item-image-container">
+                        <img src="Images/Menu/Soups/soup-3.jpg" alt="" id="soup-image" class="item-image">
+                    </div>
+                </div>
+
+                <div  class="category-item">
+                   <div  class="item-text">
+                        <h3  class="item-name">Pumpkin Soup</h3>
+                        <p  class="item-price">$23.45</p>
+                        <p  class="item-description">Great soup to drink during winter</p>
+                    </div>
+                    <div id="soup-image-container" class="item-image-container">
+                        <img src="Images/Menu/Soups/soup-4.jpg" alt="" id="soup-image" class="item-image">
+                    </div>
+                </div>
+
+                <div id="new-category-item" class="category-item newForm">
+                    <form action="/blank" id="new-menu-item-form" class="menu-item-form-new">
+                        <input type="text" placeholder="Name" id="new-menu-item" class="new-menu-item-name" required>
+                        <input type="text" placeholder="Price" id="new-menu-item-dollar" class="new-menu-item-price" required>
+                        <input type="text" placeholder="Description" id="new-menu-item-text" class="new-menu-item-description" required>
+                        <input type="text" placeholder="Image URL" id="new-menu-item-colors" class="new-menu-item-image" required>
+                        <button id="add-new-item-button" class="add-new-item-button-class">Add</button>
+                    </form>
+                </div> 
+
+                <div class="add-new-item-symbol" id="plus-symbol">
+                    <img src="Images/Menu/plus icon.svg" alt="" id="add-item-image" class="add-new-item">
+                </div>
+
+            </div>
+        </div>
+
+        <div  class="item-container">
+            <div  class="item-category-info">
+                <h2  class="item-category-title">Salads</h2>
+                <p  class="item-category-title-text">Salads made from fresh ingredients</p>
+            </div>
+            <div id="salad-items" class="category-items">
+
+                <div  class="category-item">
+                    <div  class="item-text">
+                        <h3  class="item-name">Tomato Salad</h3>
+                        <p  class="item-price">$12</p>
+                        <p  class="item-description">Includes tomatos, lettuce, olives</p>
+                    </div>
+                    <div  class="item-image-container">
+                        <img src="Images/Menu/Salads/salad-1.jpg" alt=""  class="item-image">
+                    </div>
+                </div>
+
+                <div  class="category-item">
+                    <div  class="item-text">
+                        <h3  class="item-name">Avacado Salad</h3>
+                        <p  class="item-price">$19</p>
+                        <p  class="item-description">Chooped salad with avacado</p>
+                    </div>
+                    <div  class="item-image-container">
+                        <img src="Images/Menu/Salads/salad-2.jpg" alt=""  class="item-image">
+                    </div>
+                </div>
+
+                <div  class="category-item">
+                    <div  class="item-text">
+                        <h3  class="item-name">Egg Salad</h3>
+                        <p  class="item-price">$17</p>
+                        <p  class="item-description">Made with fresh eggs from our farms</p>
+                    </div>
+                    <div  class="item-image-container">
+                        <img src="Images/Menu/Salads/salad-3.jpg" alt=""  class="item-image">
+                    </div>
+                </div>
+
+                <div id="new-category-item" class="category-item">
+                    <form action="/blank" id="new-menu-item-form" class="menu-item-form-new">
+                        <input type="text" placeholder="Name" id="new-menu-item" class="new-menu-item-name" required>
+                        <input type="text" placeholder="Price" id="new-menu-item-dollar" class="new-menu-item-price" required>
+                        <input type="text" placeholder="Description" id="new-menu-item-text" class="new-menu-item-description" required>
+                        <input type="text" placeholder="Image URL" id="new-menu-item-colors" class="new-menu-item-image" required>
+                        <button id="add-new-item-button">Add</button>
+                    </form>
+                </div> 
+
+                <div class="add-new-item-symbol" id="plus-symbol">
+                    <img src="Images/Menu/plus icon.svg" alt="" id="add-item-image" class="add-new-item">
+                </div>
+            </div>
+
+        </div>
+
+        <div  class="item-container">
+            <div  class="item-category-info">
+                <h2  class="item-category-title">Pasta</h2>
+                <p  class="item-category-title-text">Authentic italian pasta</p>
+            </div>
+            <div id="salad-items" class="category-items">
+
+                <div  class="category-item">
+                    <div  class="item-text">
+                        <h3  class="item-name">Pasta Alla Norma</h3>
+                        <p  class="item-price">$20</p>
+                        <p  class="item-description">Includes tomatos, fried eggplant, ricotta</p>
+                    </div>
+                    <div  class="item-image-container">
+                        <img src="Images/Menu/Pasta/pasta-1.jpg" alt=""  class="item-image">
+                    </div>
+                </div>
+
+                <div  class="category-item">
+                    <div  class="item-text">
+                        <h3  class="item-name">Fettuccine Alfredo</h3>
+                        <p  class="item-price">$25</p>
+                        <p  class="item-description">Includes parmesan, butter, cheese</p>
+                    </div>
+                    <div  class="item-image-container">
+                        <img src="Images/Menu/Pasta/pasta-2.jpg" alt=""  class="item-image">
+                    </div>
+                </div>
+
+                <div  class="category-item">
+                    <div  class="item-text">
+                        <h3  class="item-name">Ragü</h3>
+                        <p  class="item-price">$23</p>
+                        <p  class="item-description">Pasta served with a meat-based sauce</p>
+                    </div>
+                    <div  class="item-image-container">
+                        <img src="Images/Menu/Pasta/pasta-3.jpg" alt=""  class="item-image">
+                    </div>
+                </div>
+
+                <div  class="category-item">
+                    <div  class="item-text">
+                        <h3  class="item-name">Amatriciana</h3>
+                        <p  class="item-price">$27</p>
+                        <p  class="item-description">Includes tomatos, guanciale, pecorino, black pepper</p>
+                    </div>
+                    <div  class="item-image-container">
+                        <img src="Images/Menu/Pasta/pasta-4.jpg" alt=""  class="item-image">
+                    </div>
+                </div>
+
+                <div  class="category-item">
+                    <div  class="item-text">
+                        <h3  class="item-name">Tortelloni</h3>
+                        <p  class="item-price">$29.99</p>
+                        <p  class="item-description">Pasta filled with various vegetables</p>
+                    </div>
+                    <div  class="item-image-container">
+                        <img src="Images/Menu/Pasta/pasta-5.jpg" alt=""  class="item-image">
+                    </div>
+                </div>
+
+                <div id="new-category-item" class="category-item">
+                    <form action="/blank" id="new-menu-item-form" class="menu-item-form-new">
+                        <input type="text" placeholder="Name" id="new-menu-item" class="new-menu-item-name" required>
+                        <input type="text" placeholder="Price" id="new-menu-item-dollar" class="new-menu-item-price" required>
+                        <input type="text" placeholder="Description" id="new-menu-item-text" class="new-menu-item-description" required>
+                        <input type="text" placeholder="Image URL" id="new-menu-item-colors" class="new-menu-item-image" required>
+                        <button id="add-new-item-button">Add</button>
+                    </form>
+                </div> 
+
+                <div class="add-new-item-symbol" id="plus-symbol">
+                    <img src="Images/Menu/plus icon.svg" alt="" id="add-item-image" class="add-new-item">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="item-container">
+            <div class="item-category-info">
+                <h2 class="item-category-title">Seafood</h2>
+                <p class="item-category-title-text">Try our world renowned seafood</p>
+            </div>
+            <div class="category-items">
+
+                <div  class="category-item">
+                    <div  class="item-text">
+                        <h3  class="item-name">Fried Shrimp</h3>
+                        <p  class="item-price">$13</p>
+                        <p  class="item-description">Fried shrimp with a special sauce</p>
+                    </div>
+                    <div  class="item-image-container">
+                        <img src="Images/Menu/Seafood/seafood-1.jpg" alt=""  class="item-image">
+                    </div>
+                </div>
+
+                <div  class="category-item">
+                    <div  class="item-text">
+                        <h3  class="item-name">Clam Stew</h3>
+                        <p  class="item-price">$17.60</p>
+                        <p  class="item-description">Soup made with fres clams</p>
+                    </div>
+                    <div  class="item-image-container">
+                        <img src="Images/Menu/Seafood/seafood-2.jpg" alt=""  class="item-image">
+                    </div>
+                </div>
+
+                <div  class="category-item">
+                    <div  class="item-text">
+                        <h3  class="item-name">Cheese Covered Catfish</h3>
+                        <p  class="item-price">$30</p>
+                        <p  class="item-description">Catfish covered with our special cheese sauce</p>
+                    </div>
+                    <div  class="item-image-container">
+                        <img src="Images/Menu/Seafood/seafood-3.jpg" alt=""  class="item-image">
+                    </div>
+                </div>
+
+                <div  class="category-item">
+                    <div  class="item-text">
+                        <h3  class="item-name">Seafood Pilaff</h3>
+                        <p  class="item-price">$35</p>
+                        <p  class="item-description">Rice with various seafood</p>
+                    </div>
+                    <div  class="item-image-container">
+                        <img src="Images/Menu/Seafood/seafood-4.jpg" alt=""  class="item-image">
+                    </div>
+                </div>
+
+                <div  class="category-item">
+                    <div  class="item-text">
+                        <h3  class="item-name">Boiled  Squid</h3>
+                        <p  class="item-price">$40</p>
+                        <p  class="item-description">Boiled squids served with sauce</p>
+                    </div>
+                    <div  class="item-image-container">
+                        <img src="Images/Menu/Seafood/seafood-5.jpg" alt=""  class="item-image">
+                    </div>
+                </div>
+
+                <div  class="category-item">
+                    <div  class="item-text">
+                        <h3  class="item-name">Seafood Pasta</h3>
+                        <p  class="item-price">$33.25</p>
+                        <p  class="item-description">Pasta made with clams, shrimp and today's special fish</p>
+                    </div>
+                    <div  class="item-image-container">
+                        <img src="Images/Menu/Seafood/seafood-6.jpg" alt=""  class="item-image">
+                    </div>
+                </div>
+
+                <div  class="category-item">
+                    <div  class="item-text">
+                        <h3 class="item-name">Salmon Stew</h3>
+                        <p class="item-price">$27.80</p>
+                        <p class="item-description">Stew made with salmon and vegetables</p>
+                    </div>
+                    <div class="item-image-container">
+                        <img src="Images/Menu/Seafood/seafood-7.jpg" alt="" class="item-image">
+                    </div>
+                </div>
+
+                <div id="new-category-item" class="category-item">
+                <form action="/blank" id="new-menu-item-form" class="menu-item-form-new">
+                    <input type="text" placeholder="Name" id="new-menu-item" class="new-menu-item-name" required>
+                    <input type="text" placeholder="Price" id="new-menu-item-dollar" class="new-menu-item-price" required>
+                    <input type="text" placeholder="Description" id="new-menu-item-text" class="new-menu-item-description" required>
+                    <input type="text" placeholder="Image URL" id="new-menu-item-colors" class="new-menu-item-image" required>
+                    <button id="add-new-item-button">Add</button>
+                </form>
+                </div> 
+
+                <div class="add-new-item-symbol" id="plus-symbol">
+                    <img src="Images/Menu/plus icon.svg" alt="" id="add-item-image" class="add-new-item">
+                </div>
+            </div>
+        </div>
+        
+        <div id="add">
+            <button id="add-new-category">Add Category</button>
+        </div>
+    </section>
+
+    <section id="category-form">
+        <form action="/blank">
+            <div id="new-info">
+                <h2 id="new-category-notif" >New Category</h2>
+                <input type="text" placeholder="Category Name" id="category-name" required>
+                <input type="text" placeholder="Category Description" id="category-desc" required>
+                <button id="category-add">Add</button>
+            </div>
+        </form>
+    </section>
+    
+
+    <script src="Scripts/menu-script.js"></script>
+</body>
+</html>

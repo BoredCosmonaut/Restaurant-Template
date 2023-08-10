@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,400;1,700&family=Edu+SA+Beginner:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body id="reservation-page">
+    <nav id="header">
+        <div id="header-inside">
+            <p id="home" class="header-item">Home</p>
+            <p id="menu" class="header-item">Menu</p>
+            <div id="logo">
+                <img src="Images/Home/logo.svg" alt="" id="logo-Image">
+            </div>
+            <p id="res" class="header-item">Reservation</p>
+            <p id="about" class="header-item">About</p>
+        </div>
+    </nav>
+
+    <section id="res-form-section">
+        <h2 id="make-res">Make A Reservation With Us</h2>
+        <div id="form-container">
+            <form action="/blank" id="res-form">
+                <input type="text" name="" id="form-name" placeholder="Name" class="res-input" required>
+                <input type="text" id="form-number" placeholder="Phone Number" class="res-input" required>
+                <input type="text" id="form-number" placeholder="Amount of People" class="res-input" required>
+                <input type="text" name="" id="form-date" placeholder="Date" class="res-input" required>
+                <textarea name="res-note" id="res-note" cols="30" rows="5" placeholder="Extra note for the reservation"></textarea>
+                <button id="res-submit">Create Reservation</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="res-confirm">
+        <div id="confirmation-box">
+            <div id="mark-container">
+                <img src="Images/Reservation/check-mark.svg" alt="" id="check-mark">
+            </div>
+            <div id="confirmation-box-text">
+                <h2 id="created">Your reservation has been created</h2>
+                <button id="close-conformation">Ok</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="Scripts/res-script.js"></script>
+</body>
+</html>
