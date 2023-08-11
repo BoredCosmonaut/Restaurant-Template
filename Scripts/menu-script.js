@@ -128,72 +128,64 @@ const addButtons = document.querySelectorAll('#add-new-item-button');
 //Adds a new menu item
 for(let button of addButtons) {
     button.addEventListener("click", (e) => {
-    e.preventDefault();
+        //Prevents the form's default action
+        e.preventDefault();
 
-    const formNames = document.querySelectorAll(".new-menu-item-name");
-    const formPrices = document.querySelectorAll(".new-menu-item-price")
-    const formDescs = document.querySelectorAll(".new-menu-item-description")
-    const formUrls = document.querySelectorAll(".new-menu-item-image")
+        const clickedButton = e.currentTarget;
+        const parentContainer = button.closest(".category-items");
 
-    const clickedButton = e.currentTarget;
-    const parentContainer = button.closest(".category-items")
+        //Getting the values from the input boxes
+        const activeForm = clickedButton.closest(".menu-item-form-new");
+        const newName = activeForm.querySelector(".new-menu-item-name").value;
+        const newPrice = activeForm.querySelector(".new-menu-item-price").value;
+        const newDescription = activeForm.querySelector(".new-menu-item-description").value;
+        const newImage = activeForm.querySelector(".new-menu-item-image").value;
 
-    //Container for new item
-    const newItemContainer = document.createElement("div")
-    newItemContainer.classList.add("category-item")
+        // Container for new item
+        const newItemContainer = document.createElement("div");
+        newItemContainer.classList.add("category-item");
 
-    //Info container of the new item
-    const newItemText = document.createElement("div")
-    newItemText.classList.add("item-text")
+        // Info container of the new item
+        const newItemText = document.createElement("div");
+        newItemText.classList.add("item-text");
 
-    //Name element of the new item
-    const newItemName = document.createElement("h3")
-    newItemName.classList.add("item-name")
-    for (let name of formNames) {
-        newItemName.innerText = name.value
-    }
-    
-    newItemText.append(newItemName);
+        // Name element of the new item
+        const newItemName = document.createElement("h3");
+        newItemName.classList.add("item-name");
+        newItemName.innerText = newName;
+        newItemText.append(newItemName);
 
-    //Price of the new item
-    const newItemPrice = document.createElement("p")
-    newItemPrice.classList.add("item-price")
-    for(let price of formPrices) {
-        newItemPrice.innerText = `$ ${price.value}`
-    }
-    newItemText.append(newItemPrice);
+        // Price of the new item
+        const newItemPrice = document.createElement("p");
+        newItemPrice.classList.add("item-price");
+        newItemPrice.innerText = `$ ${newPrice}`;
+        newItemText.append(newItemPrice);
 
-    //Description of the new item
-    const newItemDesc = document.createElement("p")
-    newItemDesc.classList.add("item-description")
-    for(let desc of formDescs) {
-            newItemDesc.innerText = desc.value
-    }
-    newItemText.append(newItemDesc);
+        // Description of the new item
+        const newItemDesc = document.createElement("p");
+        newItemDesc.classList.add("item-description");
+        newItemDesc.innerText = newDescription;
+        newItemText.append(newItemDesc);
 
-    //Appends the text part to the container
-    newItemContainer.append(newItemText);
+        newItemContainer.append(newItemText);
 
-    //Container for the new item image
-    const newItemImageContainer = document.createElement("div")
-    newItemImageContainer.classList.add("item-image-container")
+        // Container for the new item image
+        const newItemImageContainer = document.createElement("div");
+        newItemImageContainer.classList.add("item-image-container");
 
-    //Image element for the new item
-    const newItemImage = document.createElement("img")
-    newItemImage.classList.add("item-image")
-    for(let url of formUrls) {
-            newItemImage.src = url.value
-    }
-    newItemImageContainer.append(newItemImage)
+        // Image element for the new item
+        const newItemImage = document.createElement("img");
+        newItemImage.classList.add("item-image");
+        newItemImage.src = newImage;
+        newItemImageContainer.append(newItemImage);
 
-    //Appends the image to the new item container
-    newItemContainer.append(newItemImageContainer);
+        // Appends the image to the new item container
+        newItemContainer.append(newItemImageContainer);
 
-    //Appends the whole card to the current category
-    parentContainer.insertBefore(newItemContainer, button.closest(".category-item"))
+        parentContainer.insertBefore(newItemContainer, button.closest(".category-item"));
 
-    //Removes the form again
-    const form = button.closest(".category-item").style.display = "none"
+        //Closes the form again
+        activeForm.style.display = "none";
 
 })
 }
