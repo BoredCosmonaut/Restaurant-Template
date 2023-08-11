@@ -77,16 +77,12 @@ const addButtons = document.querySelectorAll('#add-new-item-button');
 
 //Adds a new menu item
 for(let button of addButtons) {
-    button.addEventListener("click", (e) => {
-
-        //Prevents the form's default action
         e.preventDefault();
 
         const clickedButton = e.currentTarget;
-        const parentContainer = button.closest(".category-items");
-
-        //Getting the values from the input boxes
+        const parentContainer = clickedButton.closest(".category-items");
         const activeForm = clickedButton.closest(".menu-item-form-new");
+
         const newName = activeForm.querySelector(".new-menu-item-name").value;
         const newPrice = activeForm.querySelector(".new-menu-item-price").value;
         const newDescription = activeForm.querySelector(".new-menu-item-description").value;
@@ -132,7 +128,7 @@ for(let button of addButtons) {
 
         // Appends the image to the new item container
         newItemContainer.append(newItemImageContainer);
-        
+
         // Insert the new item before the form's parent
         parentContainer.insertBefore(newItemContainer, activeForm.parentNode);
 
@@ -140,7 +136,5 @@ for(let button of addButtons) {
         for(let form of document.querySelectorAll("#new-category-item")) {
             form.style.display = "none"
         }
-
-
 })
 }
