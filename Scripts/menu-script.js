@@ -132,8 +132,9 @@ for(let button of addButtons) {
 
         // Appends the image to the new item container
         newItemContainer.append(newItemImageContainer);
-
-        parentContainer.insertBefore(newItemContainer, button.closest(".category-item"));
+        
+        // Insert the new item before the form's parent
+        parentContainer.insertBefore(newItemContainer, activeForm.parentNode);
 
         // Hide the form by setting its display property to 'none'
         for(let form of document.querySelectorAll("#new-category-item")) {
