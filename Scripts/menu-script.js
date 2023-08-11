@@ -77,6 +77,7 @@ const addButtons = document.querySelectorAll('#add-new-item-button');
 
 //Adds a new menu item
 for(let button of addButtons) {
+    button.addEventListener("click", (e) => {
         e.preventDefault();
 
         const clickedButton = e.currentTarget;
@@ -136,5 +137,6 @@ for(let button of addButtons) {
         for(let form of document.querySelectorAll("#new-category-item")) {
             form.style.display = "none"
         }
+
 })
 }
