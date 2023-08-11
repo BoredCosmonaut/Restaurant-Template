@@ -135,8 +135,11 @@ for(let button of addButtons) {
 
         parentContainer.insertBefore(newItemContainer, button.closest(".category-item"));
 
-        //Closes the form again
-        activeForm.style.display = "none";
+        // Hide the form by setting its display property to 'none'
+        for(let form of document.querySelectorAll("#new-category-item")) {
+            form.style.display = "none"
+        }
+
 
 })
 }
