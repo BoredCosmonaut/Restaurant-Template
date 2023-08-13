@@ -49,7 +49,7 @@ document.querySelector("#category-add").addEventListener("click", (e) => {
     categoryInfo.append(categoryTitle)
     categoryInfo.append(categoryText)
     categoryContainer.append(categoryInfo)
-    categoryContainer.append(plusImage)
+
 
     const parent = document.getElementById("add").parentNode
     parent.insertBefore(categoryContainer, document.getElementById("add"))
