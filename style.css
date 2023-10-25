@@ -72,6 +72,10 @@ table {
     max-height: 100%;
 }
 
+#logo-mobile {
+    display: none;
+}
+
 #header-inside {
     display: inline-flex;
     justify-content: center;
@@ -128,6 +132,10 @@ table {
     font-family: 'EB Garamond', serif;
 } */
 
+#hamburger {
+    display: none;
+}
+
  /* End of CSS for the home page */
 
  /* Start of CSS for about page */
@@ -147,6 +155,8 @@ table {
 #About-page #header {
     max-height: 10.5rem;
  }
+
+ 
 
 #About-page .header-item {
     margin-top: 1rem;
@@ -401,8 +411,7 @@ table {
         display: inline-flex;
         flex-direction: column;
         margin-top: 20px;
-        margin-left: 210px;
-        
+        margin-left: 170px;        
      }
 
      #reservation-page .res-input {
@@ -541,7 +550,7 @@ table {
    #menu-page .item-category-title-text{
     font-family: 'EB Garamond', serif;
     font-size: calc(30px + 0.390625vw);
-    font-weight: 5  00;
+    font-weight: 500;
     margin-top: 1%;
     text-align: center;
    }
@@ -643,13 +652,28 @@ table {
 
    #menu-page #add-new-item-button {
     border: none;
-    padding: 5px 25px;
+    padding: 5px 40px;
     font-size: 1.2rem;
     font-weight: 500;
     font-family: 'Edu SA Beginner', cursive;
    }
 
    #menu-page #add-new-item-button:hover {
+    position: relative;
+    top: -1px;
+    cursor: pointer;
+   }
+
+   #menu-page #cancel {
+    border: none;
+    padding: 5px 40px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: 'Edu SA Beginner', cursive;
+    margin-left: 50px;
+   }
+
+   #menu-page #cancel:hover {
     position: relative;
     top: -1px;
     cursor: pointer;
@@ -737,3 +761,436 @@ table {
         text-align: center;
         margin-bottom: 20px;
     }
+
+@media(max-width:400px) {
+
+    /* Home page phone display section */ 
+    
+    #home-page {
+        overflow: -moz-hidden-unscrollable;
+        width: 400px;
+        max-width: 400px;
+        background-image: url("https://images.unsplash.com/photo-1548587468-971ebe4c8c3b?auto=format&fit=crop&q=80&w=1888&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #home-page #hamburger {
+        display: inline-flex;
+        margin: 10px;
+        width: 20px;
+        height: 20px;
+    }
+
+    #home-page #logo {
+        display: none;
+    }
+
+    #home-page #logo-mobile {
+        display: block;
+        width: 100px;
+        height: 100px;
+        padding-top: 100px;
+        margin: 0 auto;
+    }
+
+    #home-page #header {
+        position: absolute;
+        margin: 0;
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+        max-height: 200px;
+        z-index: 10;
+    }
+
+
+    #home-page #header-inside {
+        display: none;
+        position: relative;
+        top: 35px;
+        left: -10px;
+        flex-direction: column;
+        max-width: 140px;
+        max-height: 150px;
+        font-size: 4px;
+        border-radius: 0 10px 10px 10px;
+        z-index: 2;
+        backdrop-filter: blur(2px);
+    }
+
+    #home-page .header-item {
+        margin-top: 10px;
+        font-size: 15px;
+    }
+
+    #home-page #middle {
+        max-width: 400px;
+        text-align: center;
+    }
+    
+    #home-page #name {
+        padding-top: 20px;
+        max-width: 400px;
+        font-size: 40px;
+        z-index: 1;
+    }
+
+    /* Section for the reservation page mobile design */ 
+
+    #reservation-page {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    #reservation-page #hamburger {
+        display: inline-flex;
+        margin: 10px;
+        width: 20px;
+        height: 20px;
+    }
+
+    #reservation-page #logo {
+        display: none;
+    }
+
+    #reservation-page #header {
+        position: absolute;
+        top: 10px;
+        margin: 0;
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+        max-height: 200px;
+    }
+
+
+    #reservation-page #header-inside {
+        display: none;
+        position: relative;
+        top: 35px;
+        left: -10px;
+        flex-direction: column;
+        max-width: 120px;
+        max-height: 180px;
+        font-size: 4px;
+        border-radius: 0 10px 10px 10px;
+        z-index: 2;
+        backdrop-filter: blur(10px);
+    }
+
+    #reservation-page .header-item {
+        margin-top: 10px;
+        font-size: 15px;
+    }    
+
+    #reservation-page #res-form-section {
+        position: relative;
+        top: -50px;
+        width: 350px;
+        height: 570px;
+        margin: 25% auto;
+        z-index: 1;
+    }
+
+    #reservation-page #make-res {
+        font-size: 20px;
+    }
+
+    #reservation-page #res-form {
+        margin-left: 20px;
+    }
+
+    #reservation-page .res-input {
+        width: 300px;
+        padding: 10px 5px;
+    }
+
+    #reservation-page #res-note {
+        width: 290px;
+    }
+
+    #reservation-page #res-confirm {
+        top: 200px;
+        left: 25px;
+        width: 350px;
+        z-index: 3;
+    }
+
+    #reservation-page #mark-container {
+        margin: 10px 150px;
+    }
+
+    #reservation-page #created {
+        font-size: 24px;
+    }
+
+    #reservation-page #close-conformation {
+        margin-top: 30px;
+    }
+
+    #reservation-page #check-mark {
+        width: 75px;
+        height: 75px;
+    }
+
+    /* Section for the mobile design of about page */ 
+
+    #About-page #hamburger {
+        position: relative;
+        top: 10px;
+        display: inline-flex;
+        margin: 10px;
+        width: 20px;
+        height: 20px;
+    }
+
+    #About-page #logo {
+        display: none;
+    }
+
+    #About-page #header {
+        position: absolute;
+        margin: 0;
+        top: -10px;
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+        max-height: 200px;
+        z-index: 10;
+    }
+
+
+    #About-page #header-inside {
+        display: none;
+        position: relative;
+        top: 45px;
+        left: -10px;
+        flex-direction: column;
+        max-width: 150px;
+        max-height: 200px;
+        font-size: 4px;
+        border-radius: 0 10px 10px 10px;
+        z-index: 10;
+        backdrop-filter: blur(10px);
+    }
+
+    #About-page .header-item {
+        margin-top: 10px;
+        font-size: 15px;
+    }
+
+    #About-page #info {
+        width: 400px;
+        height: auto;
+    }
+
+    #About-page #about-info-container {
+        width: 400px;
+        height: 550px;
+    }
+
+    #About-page #about-container {
+        flex-direction: column;
+        width: 400px;
+        height: 550px;
+    }
+
+    #About-page #text-container {
+        width: 400px;
+    }
+
+    #About-page #about-text {
+        font-size: 17px;
+        padding-bottom: 30px;
+    }
+
+    #About-page #image-container {
+        width: 400px;
+    }
+
+    #About-page #image-container-inside {
+        max-width: 400px;
+        border-radius: 0;
+    }
+
+    #About-page #mission-info-container {
+        width: 400px;
+        height: 550px;
+    }
+
+    #About-page #mission-container {
+        flex-direction: column;
+        width: 400px;
+        height: 550px;
+    }
+
+    #About-page #mission-text-container {
+        width: 400px;
+    }
+
+    #About-page #mission-text {
+        font-size: 17px;
+        padding-bottom: 30px;
+    }
+
+    #About-page #mission-image-container {
+        width: 400px;
+    }
+
+    #About-page #mission-image-container-inside {
+        max-width: 400px;
+    }
+
+    #About-page #contact-info-container {
+        width: 400px;
+        height: 550px;
+    }
+
+    #About-page #contact-container {
+        flex-direction: column;
+        width: 400px;
+        height: 550px;
+    }
+
+    #About-page #contact-text-container {
+        width: 400px;
+        padding-top: 30px;
+    }
+
+    #About-page #phone-logo {
+        margin-top: 3px;
+        width: 20px;
+        height: 20px;
+    }
+
+    #About-page #phone-number {
+        font-size: 15px;
+    }
+
+    #About-page #email-logo {
+        margin-top: 3px;
+        margin-left: 5px;
+        width: 20px;
+        height: 20px;
+    }
+
+    #About-page #emial-example {
+        font-size: 15px;
+    }
+
+    #About-page #logos {
+        margin-top: 40px;
+        padding-bottom: 20px;
+    }
+
+    #About-page .social {
+        width: 25px;
+        height: 25px;
+    }
+
+    #About-page #google-maps-container {
+        width: 400px;
+    }
+
+    #About-page #google-map {
+        max-width: 400px;
+        height: 500px;
+    }
+
+    /* Section for the mobile design of menu page */ 
+    #menu-page #hamburger {
+        display: inline-flex;
+        margin: 10px;
+        width: 20px;
+        height: 20px;
+    }
+
+    #menu-page #logo {
+        display: none;
+    }
+
+    #menu-page #header {
+        position: absolute;
+        margin: 0;
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+        max-height: 200px;
+        z-index: 10;
+    }
+
+
+    #menu-page #nav {
+        display: none;
+        position: relative;
+        top: 35px;
+        left: -20px;
+        flex-direction: column;
+        max-width: 150px;
+        max-height: 200px;
+        font-size: 4px;
+        border-radius: 0 10px 10px 10px;
+        z-index: 2;
+        backdrop-filter: blur(5px)
+    }
+
+    #menu-page #items {
+        padding-top: 40px;
+    }
+
+    #menu-page .header-item {
+        margin-top: 10px;
+        font-size: 15px;
+    }
+
+    #menu-page .item-container {
+        width: 370px;
+        max-width: 400px;
+    }
+
+    #menu-page .item-category-title {
+        font-size: 40px;
+        margin-top: 5%;
+    }
+
+    #menu-page .item-category-title-text {
+        font-size: 20px;
+        margin-top: 3%;
+    }
+
+    #menu-page .category-items{
+        align-items: center;
+        justify-content: center;
+    }
+
+    #menu-page .category-item {
+        width: 300px;
+    }
+
+    #menu-page .item-name {
+        font-size: 17px;
+    }
+
+    #menu-page .item-price {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    #menu-page .item-description {
+        font-size: 12px;
+    }
+
+    #menu-page .item-image-container {
+        width: 150px;
+    }
+
+    #menu-page .item-image {
+        width: 150px;
+    }
+
+    #menu-page .add-new-item {
+        margin-top: 10px;
+        padding-bottom: 20px;
+    }
+}

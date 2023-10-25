@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
+    <link rel="shortcut icon" href="Images/Home/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,6 +12,8 @@
 </head>
 <body id="menu-page">
     <nav id="header">
+        <img src="Images/icon-hamburger.svg" alt="" id="hamburger">
+        
         <div id="nav">
             <p id="home" class="header-item">Home</p>
             <p id="menu" class="header-item">Menu</p>
@@ -81,7 +84,10 @@
                         <input type="text" placeholder="Price" id="new-menu-item-dollar" class="new-menu-item-price" >
                         <input type="text" placeholder="Description" id="new-menu-item-text" class="new-menu-item-description" >
                         <input type="text" placeholder="Image URL" id="new-menu-item-colors" class="new-menu-item-image" >
-                        <button id="add-new-item-button" class="add-new-item-button-class">Add</button>
+                        <div id="buttons" style="display: flex; flex-direction: row;">
+                            <button id="add-new-item-button" class="add-new-item-button-class">Add</button>
+                            <button id="cancel" class="cancel-new-item">Cancel</button>
+                        </div>
                     </form>
                 </div> 
 
@@ -98,7 +104,6 @@
                 <p  class="item-category-title-text">Salads made from fresh ingredients</p>
             </div>
             <div id="salad-items" class="category-items">
-
                 <div  class="category-item">
                     <div  class="item-text">
                         <h3  class="item-name">Tomato Salad</h3>
@@ -138,7 +143,10 @@
                         <input type="text" placeholder="Price" id="new-menu-item-dollar" class="new-menu-item-price" >
                         <input type="text" placeholder="Description" id="new-menu-item-text" class="new-menu-item-description" >
                         <input type="text" placeholder="Image URL" id="new-menu-item-colors" class="new-menu-item-image" >
-                        <button id="add-new-item-button">Add</button>
+                        <div id="buttons" style="display: flex; flex-direction: row;">
+                            <button id="add-new-item-button" class="add-new-item-button-class">Add</button>
+                            <button id="cancel" class="cancel-new-item">Cancel</button>
+                        </div>
                     </form>
                 </div> 
 
@@ -217,7 +225,10 @@
                         <input type="text" placeholder="Price" id="new-menu-item-dollar" class="new-menu-item-price" >
                         <input type="text" placeholder="Description" id="new-menu-item-text" class="new-menu-item-description" >
                         <input type="text" placeholder="Image URL" id="new-menu-item-colors" class="new-menu-item-image" >
-                        <button id="add-new-item-button">Add</button>
+                        <div id="buttons" style="display: flex; flex-direction: row;">
+                            <button id="add-new-item-button" class="add-new-item-button-class">Add</button>
+                            <button id="cancel" class="cancel-new-item">Cancel</button>
+                        </div>
                     </form>
                 </div> 
 
@@ -318,7 +329,10 @@
                     <input type="text" placeholder="Price" id="new-menu-item-dollar" class="new-menu-item-price" >
                     <input type="text" placeholder="Description" id="new-menu-item-text" class="new-menu-item-description" >
                     <input type="text" placeholder="Image URL" id="new-menu-item-colors" class="new-menu-item-image" >
-                    <button id="add-new-item-button">Add</button>
+                    <div id="buttons" style="display: flex; flex-direction: row;">
+                            <button id="add-new-item-button" class="add-new-item-button-class">Add</button>
+                            <button id="cancel" class="cancel-new-item">Cancel</button>
+                    </div>
                 </form>
                 </div> 
 
