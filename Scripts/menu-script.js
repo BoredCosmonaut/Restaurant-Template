@@ -50,7 +50,6 @@ document.querySelector("#category-add").addEventListener("click", (e) => {
     categoryInfo.append(categoryText)
     categoryContainer.append(categoryInfo)
 
-
     const parent = document.getElementById("add").parentNode
     parent.insertBefore(categoryContainer, document.getElementById("add"))
 
@@ -74,6 +73,16 @@ for (let symbol of plusSymbols) {
 // Select all "Add" buttons within category items
 const addButtons = document.querySelectorAll('#add-new-item-button');
 
+const cancelButtons = document.querySelectorAll('#cancel');
+
+for(let button of cancelButtons) {
+    button.addEventListener("click", (e) => {
+        e.preventDefault();
+        const clickedCancel = e.currentTarget;
+        const activeForm = clickedCancel.closest(".category-item")
+        activeForm.style.display = "none"
+    })
+}
 
 //Adds a new menu item
 for(let button of addButtons) {
@@ -140,3 +149,14 @@ for(let button of addButtons) {
 
 })
 }
+
+document.querySelector("#hamburger").addEventListener("click", function() {
+    console.log("clikc")
+    const navMenu = document.querySelector("#nav");
+    if(navMenu.style.display === "none") {
+        navMenu.style.display = "flex"
+    }
+    else {
+        navMenu.style.display = "none"
+    }
+})
