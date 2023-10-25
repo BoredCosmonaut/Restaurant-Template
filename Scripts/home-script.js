@@ -16,3 +16,13 @@ document.querySelector("#menu").addEventListener("click", () => {
 document.querySelector("#res").addEventListener("click", () => {
     document.location = "reservation.html"
 })
+
+document.querySelector("#hamburger").addEventListener("click", function() {
+    const navMenu = document.querySelector("#header-inside");
+    if(navMenu.style.display === "none") {
+        navMenu.style.display = "flex"
+    }
+    else {
+        navMenu.style.display = "none"
+    }
+})
