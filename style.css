@@ -767,6 +767,7 @@ table {
     /* Home page phone display section */ 
     
     #home-page {
+	overflow:hidden;
         width: 100%;
         height: auto;
         background-image: url("Images/Home/mobile-background.png");
