@@ -767,11 +767,11 @@ table {
     /* Home page phone display section */ 
     
     #home-page {
-        overflow: -moz-hidden-unscrollable;
-        width: 400px;
-        max-width: 400px;
-        background-image: url("https://images.unsplash.com/photo-1548587468-971ebe4c8c3b?auto=format&fit=crop&q=80&w=1888&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-        background-size: cover;
+        width: 100%;
+        height: auto;
+        background-image: url("Images/Home/mobile-background.png");
+        background-size: auto;
+        background-position: center -700px;
         background-repeat: no-repeat;
     }
 
