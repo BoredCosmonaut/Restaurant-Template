@@ -767,7 +767,6 @@ table {
     /* Home page phone display section */ 
     
     #home-page {
-	overflow:hidden;
         width: 100%;
         height: auto;
         background-image: url("Images/Home/mobile-background.png");
@@ -1166,7 +1165,13 @@ table {
     }
 
     #menu-page .category-item {
-        width: 300px;
+        width: 100%;
+        max-width: 380px;
+    }
+
+    #menu-page .item-text {
+        width: 50%;
+        max-width: 190px;
     }
 
     #menu-page .item-name {
@@ -1183,11 +1188,12 @@ table {
     }
 
     #menu-page .item-image-container {
-        width: 150px;
+        width: 50%;
+        max-width: 180px;
     }
 
     #menu-page .item-image {
-        width: 150px;
+        width: 100%;
     }
 
     #menu-page .add-new-item {
