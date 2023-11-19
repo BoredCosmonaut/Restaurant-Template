@@ -8,12 +8,12 @@
   <li>Menu page with the ability to add new items and categoires</li>
   <li>Reservation page to make an online reservation</li>
   <li>About page to give some info about the restaurant</li>
+  <li>Responsive display for mobile screens</li>
 </ul>
 
 <h2>To-Do</h2>
 <ul>
   <li>Connect a database to menu and the reservation page</li>
-  <li>Make the site mobile responsive</li>
 </ul>
 
 <h3>TR</h3>
@@ -24,9 +24,9 @@
   <li>Yeni kategorilerin ve eşyaların eklenebildiği menü sayfası</li>
   <li>Online rezervasyon yapmak için rezervasyon sayfası</li>
   <li>Restorant hakkında bilgiler içeren hakkında sayfası</li>
+  <li>Mobil ekranlar için duyarlı arayüz</li>
 </ul>
 <h2>Yapılacaklar</h2>
 <ul>
   <li>Rezervasyon ve menü sayfasına veri tabanı bağlanacak</li>
-  <li>Mobil ekran boyutları için site duyarlı yapılacak</li>
 </ul>
